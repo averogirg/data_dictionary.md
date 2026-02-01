@@ -10,7 +10,7 @@
 
 **Фрагмент дашборда Power BI**
 
-- data_dictionary.md/screenshots/Отчет в PowerBi.png
+- data_dictionary.md/screenshots/powerbi_dashboard_overview.png
 
 **Рисунок 2:** Общий вид интерактивного дашборда с графиком динамики и анализом по категориям.
 
