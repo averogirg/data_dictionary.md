@@ -3,12 +3,12 @@
 
 **Результат SQL-анализа**
 
-**screenshots/my_sql_queries.sql.png**
+**data_dictionary.md/screenshots/my_sql_queries.sql.png**
 
 **Рисунок 1: Визуализация результата основного аналитического запроса. Категория Furniture приносит наибольшую выручку.**
 
 **Фрагмент дашборда Power BI**
-**screenshots/Отчет в PowerBi.png**
+**data_dictionary.md/screenshots/Отчет в PowerBi.png**
 
 **Рисунок 2: Общий вид интерактивного дашборда с графиком динамики и анализом по категориям.**
 
