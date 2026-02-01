@@ -26,7 +26,7 @@
 
 ### Пример запроса:
 ```sql
--- Топ-5 клиентов по сумме покупок
+ Топ-5 клиентов по сумме покупок
 SELECT customer_name, SUM(sales) as total_spent
 FROM superstore
 GROUP BY customer_name
