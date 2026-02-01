@@ -25,10 +25,12 @@
 5. **JOIN** - объединение таблиц
 
 ### Пример запроса:
-```sql
--- Топ-5 клиентов по сумме покупок
-SELECT customer_name, SUM(sales) as total_spent
+-- Кто наши топ-3 клиента по сумме покупок?
+SELECT 
+    customer_name,
+    SUM(sales) as total_spent,
+    COUNT(*) as orders_count
 FROM superstore
 GROUP BY customer_name
 ORDER BY total_spent DESC
-LIMIT 5;
+LIMIT 3;
