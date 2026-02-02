@@ -29,4 +29,26 @@ GROUP BY customer_name
 ORDER BY total_spent DESC
 LIMIT 5;
 
+**Этап 2: Расширенный анализ с объединением таблиц**
+Когда базовые вопросы были решены, я перешла к более сложному анализу, создав таблицу suppliers и объединив её с основной:
+
+**5. Как связать товары с поставщиками? Объединение таблиц (JOIN).**
+
+SELECT
+    superstore.product_name,
+    superstore.category,
+    suppliers.supplier_name
+FROM superstore
+JOIN suppliers ON superstore.category = suppliers.category;
+
+**6. Есть ли товары без поставщиков? Поиск пробелов (LEFT JOIN).**
+
+SELECT
+    superstore.product_name,
+    superstore.category,
+    suppliers.supplier_name
+FROM superstore
+LEFT JOIN suppliers ON superstore.category = suppliers.category;
+Этот запрос помогает отделу закупок увидеть, для каких категорий нужно найти новых поставщиков.
+
 Все SQL-запросы доступны в папке /sql проекта.
