@@ -1,4 +1,5 @@
-Изучаю анализ данных на примере продаж
+Изучаю анализ данных на примере продаж:
+
 -- Посмотреть первые 5 строк таблицы
 SELECT * FROM superstore 
 LIMIT 5;
@@ -32,5 +33,23 @@ SELECT
 FROM superstore
 GROUP BY customer_name
 ORDER BY total_spent DESC
-
 LIMIT 3;
+
+-- Показывает ВСЕ товары, даже если у них нет поставщика
+SELECT 
+    superstore.product_name,
+    superstore.category,
+    superstore.sales,
+    suppliers.supplier_name,
+    suppliers.rating
+FROM superstore
+LEFT JOIN suppliers ON superstore.category = suppliers.category
+ORDER BY suppliers.supplier_name;
+
+--Объединение таблицы superstore и suppliers по полю category;
+SELECT 
+    superstore.product_name,
+    superstore.category,
+    suppliers.supplier_name
+FROM superstore
+JOIN suppliers ON superstore.category = suppliers.category;
