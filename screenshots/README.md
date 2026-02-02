@@ -6,12 +6,21 @@
 
 - data_dictionary.md/screenshots/my_sql_queries.sql.png
 
-**Рисунок 1:** Визуализация результата основного аналитического запроса. Категория Furniture приносит наибольшую выручку.
+### Скриншоты результатов расширенного анализа
+
+Чтобы наглядно показать работу с объединением таблиц, я добавила результаты ключевых запросов:
+
+**Результат JOIN: товары и их поставщики**
+
+- data_dictionary.md/screenshots/sql_join_result.png
+
+**Результат LEFT JOIN: поиск товаров без поставщика**
+
+- data_dictionary.md/screenshots/sql_leftjoin_result.png
 
 **Фрагмент дашборда Power BI**
 
 - data_dictionary.md/screenshots/powerbi_dashboard_overview.png
 
-**Рисунок 2:** Общий вид интерактивного дашборда с графиком динамики и анализом по категориям.
 
-Все скриншоты доступны в папке /screenshots.
+> Все скриншоты доступны в папке [`/screenshots`](screenshots/).
