@@ -1,0 +1,6 @@
+supplier_id,supplier_name,category,rating,country
+S1,OfficeGuru,Office Supplies,A,USA
+S2,TechGlobal,Technology,A+,China
+S3,FurnitureWorld,Furniture,B,Italy
+S4,PaperPros,Office Supplies,A-,Canada
+S5,ElectroTech,Technology,B+,South Korea
