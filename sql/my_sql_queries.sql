@@ -35,7 +35,7 @@ GROUP BY customer_name
 ORDER BY total_spent DESC
 LIMIT 3;
 
--- Показывает ВСЕ товары, даже если у них нет поставщика
+-- Показывает все товары, даже если у них нет поставщика
 SELECT 
     superstore.product_name,
     superstore.category,
@@ -53,3 +53,4 @@ SELECT
     suppliers.supplier_name
 FROM superstore
 JOIN suppliers ON superstore.category = suppliers.category;
+
