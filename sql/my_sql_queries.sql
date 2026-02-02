@@ -1,4 +1,4 @@
--- Изучаю анализ данных на примере продаж
+Изучаю анализ данных на примере продаж
 -- Посмотреть первые 5 строк таблицы
 SELECT * FROM superstore 
 LIMIT 5;
@@ -32,4 +32,5 @@ SELECT
 FROM superstore
 GROUP BY customer_name
 ORDER BY total_spent DESC
+
 LIMIT 3;
