@@ -49,6 +49,7 @@ SELECT
     suppliers.supplier_name
 FROM superstore
 LEFT JOIN suppliers ON superstore.category = suppliers.category;
+
 Этот запрос помогает отделу закупок увидеть, для каких категорий нужно найти новых поставщиков.
 
 Все SQL-запросы доступны в папке /sql проекта.
